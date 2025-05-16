@@ -8,9 +8,11 @@ import { dark } from "@clerk/themes";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap",
+  display: "block",
   preload: true,
-  fallback: ["system-ui", "arial"],
+  fallback: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+  adjustFontFallback: true,
+  variable: "--font-inter",
 });
 
 export const metadata = {
